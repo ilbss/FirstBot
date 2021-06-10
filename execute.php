@@ -55,12 +55,12 @@
    			$text="Benvenuto sul Bot Sasuke Uchihaa!";
    			$parameters = array('chat_id' => $chatId, "text" => $text);
   		}
-  		if($text == "foto") {
+  		if($text == "foto"){
     			//Salvo all'interno del vettore $foto 3 foto in posizioni differenti
      			$foto[0] = "foto.jpg";
      			$foto[1] = "foto1.jpg";
-           		//genero un numero random tra 0 e 3 e lo salvo nella variabile $fotojpg
-    			$i = rand(0,1);    
+           		//genero un numero random tra 0 e 3 e lo salvo nella variabile $fotojpg;
+    			$i = rand(0,1);  
     			sendFoto($chatId, $foto[$i],false,"descrizione foto", $api);
    		}
                 if($text=="barze"){
