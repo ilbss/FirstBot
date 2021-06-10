@@ -48,7 +48,7 @@
 		//i parametri sono cosa voglio mandare indietro al mio utente
 		$parameters = array('chat_id' => $chatId, "text" => $text);
 		
-		if($text=="data"||$text=="/data"){
+		if($text=="data"){
    			$text = "la data odierna è:".date("d.m.y");
    			$parameters = array('chat_id' => $chatId, "text" => $risp);
    			}
@@ -56,7 +56,7 @@
    			$text="Benvenuto sul BOT di telegram Sasuke";
    			$parameters = array('chat_id' => $chatId, "text" => $risp);
   			}
-  		if($text=="foto"||$text==/"foto"){
+  		if($text=="foto"){
     		//Salvo all'interno del vettore $foto 3 foto in posizioni differenti
     			$foto[0]="foto.jpg";
     			$foto[1]="foto1.jpg";
