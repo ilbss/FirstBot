@@ -75,7 +75,12 @@
      			$i = rand(0,3); 
      			$parameters = array('chat_id' => $chatId, "text" => $barze[$i]);
     		}
-		
+		if($text == "audio"){
+   			sendAudio($chatId, "./audio/jingle.mp3", false,"file audio", $api);
+ 		}
+ 		 if($text == "pdf"){
+  			 sendDocument($chatId, "./files/testo.pdf",false, "un testo in pdf", $api);
+  		}
 		
 		//aggiungo il comando di invio
 		//e lo invio
