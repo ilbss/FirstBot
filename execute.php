@@ -65,16 +65,16 @@
     			$i = rand(0,3);  
     			sendFoto($chatId, $foto[$i],false,"descrizione foto", $api);
    		}
-                if($text=="barze"){
-    			//Salvo all'interno del vettore $barze 2 bazelette in posizioni differenti
-     			$barze[0] = "Che cos è una zebra? Un cavallo evaso dal carcere!";
-     			$barze[1] = "Qual è il colmo per un truffatore?Fare un buco nell acqua.";
-     			$barze[2] = "Chi la fa la vende, chi la compra non la usa, chi la usa non la vede, cos è???? La tomba.";
-            		$barze[3] = "Qual è il colmo per un giardiniere? Piantare la fidandata."; 
-    			//genero un numero random tra 0 e 2 e lo salvo nella variabile $i 
-     			$i = rand(0,3); 
-     			$parameters = array('chat_id' => $chatId, "text" => $barze[$i]);
-    		}
+                
+		if($text == "Actis"){
+   			$Actis[0] = "Ma questa classe è un bivacco!";
+			$Actis[1] = "Fernicola, credi forse che noi insegnanti siamo dei celebrolesi?!";
+			$Actis[2] = "Questo libro è prolisso!";
+			$Actis[3] ="Ragazzi, che disastro!";
+   			$i = rand(0,3);
+			$parameters = array('chat_id' => $chatId, "text" => $Actis[$i]);
+  		}
+		
 		if($text == "audio"){
    			sendAudio($chatId, "./audio/jingle.mp3", false,"file audio", $api);
  		}
